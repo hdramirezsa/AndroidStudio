@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/fondosecundariodorado"
+    tools:context=".UploadActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadNombre"
+            android:background="@drawable/lavander_border"
+            android:backgroundTint="@color/dorado"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Ingrese el Nombre del Libro"
+            android:textColorHint="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadCalificacion"
+            android:background="@drawable/lavander_border"
+            android:backgroundTint="@color/dorado"
+            android:textSize="24dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Ingrese la Calificacion"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadTipo"
+            android:background="@drawable/lavander_border"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/dorado"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Ingrese Tipo de Libro"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadCodigo"
+            android:background="@drawable/lavander_border"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/dorado"
+            android:textSize="24dp"
+            android:layout_marginTop="5dp"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Ingrese el Codigo ISBN"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Guardar Registro"
+            android:id="@+id/saveButton"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/dorado"
+            android:textColor="@color/black"
+            app:strokeColor="@color/white"
+            app:strokeWidth="5dp"
+            app:cornerRadius = "20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

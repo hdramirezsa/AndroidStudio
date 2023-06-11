@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondosecundariodorado"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/searchCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:hint="Ingrese el Codigo a Consultar"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:text="Consultar"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/dorado"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp"
+        android:textSize="24sp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@id/searchCodigo"
+        app:layout_constraintStart_toStartOf="@id/searchCodigo"
+        app:layout_constraintTop_toBottomOf="@id/searchCodigo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_border"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readNombre"
+                    android:background="@color/white"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Calificacion"
+                    android:layout_weight="1"
+                    android:text="Calificacion"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readCalificacion"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@color/lavender"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tipo"
+                    android:layout_weight="1"
+                    android:text="Tipo de Libro"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readTipo"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "811177632322",
+    "project_id": "biblioteca-personal-91d33",
+    "storage_bucket": "biblioteca-personal-91d33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811177632322:android:16272d1b15be722cbac3db",
+        "android_client_info": {
+          "package_name": "com.example.bibliotecapersonal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC74Y0-5FU9EwpAVRwgVl7KTXVhCbeS07Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
